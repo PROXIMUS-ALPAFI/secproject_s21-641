@@ -1,0 +1,165 @@
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function validateform(){
+        let x =document.getElementsByid("name").value
+        if(x==""){
+            alert("the field shouldnt be empyty");
+            return false;
+        }
+    }
+</script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<style>
+    body {
+        text-align: center;
+        box-align: center;
+        display: flex;
+        background-color: darkkhaki;
+        image-rendering: crisp-edges;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+
+    .form {
+        margin-top: 180px;
+        margin-left: 169px;
+        background: transparent;
+        box-sizing: border-box;
+        background-color: rgba(14, 14, 14, 0.425);
+        height: fit-content;
+        border-radius: 10px;
+    }
+    label {
+        color: aliceblue;
+        padding: 10px;
+        margin: 10px;
+        font-size: 20px;
+        font-family: Roboto, Arial, sans-serif;
+    }
+
+    p {
+        font-size: xx-large;
+        text-transform: uppercase;
+        color: aliceblue;
+        text-align: center;
+        font-weight: 400;
+
+    }
+
+    .cname {
+        font-family: Roboto, Arial, sans-serif;
+        margin-left: -58px;
+        font-size: 20px;
+    }
+    .form-message {
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+}
+
+    option {
+        background: black;
+    }
+
+    sup {
+        color: rgb(242, 18, 18);
+        font-size: 15px;
+    }
+
+    .gender {
+        font-size: 18px;
+        margin: 1px;
+        padding: 1px;
+    }
+    .backgr{
+        height: min-content;
+        display: inline-block;
+        margin-top:0;
+
+    }
+    #header{
+        margin-left :20px;
+        margin-top:0px;
+        display:block;
+        position:absolute;
+        color: #ff7b00;
+
+    }
+</style>
+
+<body>
+    <div >
+        <img class="backgr" src="logo2.png" alt="">
+        <h1 id="header">SDH </h1>
+        <br>
+    </div>
+
+    <div class="form">
+        <p>Registration Form </p>
+        <form action="form.html">
+            <label for="name" class="name"> Full Name <sup>*</sup></label>
+            <input type="text" required>
+            <br>
+            <label for="address" class="address">address <sup>*</sup></label>
+            <input type="text" required>
+            <br>
+            <label for="subject">subject <sup>*</sup></label>
+            <select name="subject" id="subject" required>
+                <option value="">warranty claim</option>
+                <option value="">installation</option>
+                <option value="">defective product</option>
+                <option value="">return </option>
+                <option value="">invoice</option>
+                <option value="">service visit</option>
+                <option value="">retail inquiry</option>
+                <option value="">product info</option>
+            </select>
+            <br>
+            <label for="email" class="email"> Email Id <sup>*</sup></label>
+            <input type="email" name="" id="" value="example@gmail.com" required>
+            <br>
+            <label for="contact" class="contact">Phone <sup>*</sup></label>
+            <input type="text" required
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" />
+            <br>
+            <label for="gender">Gender <sup>*</sup></label>
+            <input type="radio" name="gender" id="Male" required>
+            <label for="gender" class="gender">Male</label>
+            <input type="radio" name="gender" id="Female" required>
+            <label for="gender" class="gender">Female</label>
+            <input type="radio" name="gender" id="other" required>
+            <label for="gender" class="gender">Other</label>
+            <br>
+            <input class="form-message" type="text" placeholder="YOUR MESSAGE">
+            <!-- <select name="Gender" id=""> -->
+            <!-- <option value="select">Select</option> -->
+            <!-- <option value="Male">Male</option>
+                <option value="Female">Female</option> -->
+            <!-- <option value="LGBTQ">LGBTQ</option> -->
+            <!-- <option value="Other">Other</option>
+            </select> -->
+
+            <br>
+
+            <br> <br>
+            <input type="submit" value="submit" required>
+
+        </form>
+        <a id="whatsap" aria-label="Chat on WhatsApp" href="https://wa.me/6969696969"> <img alt="Chat on WhatsApp" src="WhatsAppButtonGreenSmall.png" height="50px" width="150px" />
+
+    </div>
+    <script>
+        function validation
+    </script>
+</body>
+</html>

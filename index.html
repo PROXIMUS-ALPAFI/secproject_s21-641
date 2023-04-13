@@ -1,0 +1,387 @@
+<html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>index</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    document.querySelector('a[href="#menu"]').addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector('#menu').scrollIntoView({ behavior: 'smooth' });
+    });
+    document.querySelector('a[href="about-us"]').addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector('#about-us').scrollIntoView({ behavior: 'smooth' });
+    });
+    document.querySelector('a[href="#contactus"]').addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector('#contact-us').scrollIntoView({ behavior: 'smooth' });
+    });
+    //XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+
+  </script>
+</head>
+
+<body>
+  <style>
+    body {
+      /*background-image: url(a-i-1_home_hardware_shop_.jpg);*/
+      background-size: cover;
+      background-color: rgb(0, 0, 0);
+      background-image: url(bgmi.jpg);
+    }
+
+
+    #h01 {
+      color: rgb(255, 84, 22);
+      margin-top: 30px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 30px;
+      padding-top: 10px;
+      margin-bottom: 0%;
+
+    }
+
+    #about-us {
+      color: crimson;
+    }
+
+    #title {
+      color: gold;
+      margin-top: 0%;
+    }
+
+    footer {
+      margin-top: 389px;
+      color: rgb(20, 61, 197);
+    }
+
+    header {
+      color: darkred;
+
+    }
+
+    a {
+      color: rgb(255, 81, 0);
+      font-size: large;
+      font-style: italic;
+    }
+
+    .p_about {
+      color: rgb(104, 4, 4);
+      margin: 0%;
+      font-size: 30px;
+
+    }
+
+    #contact-us {
+      color: rgb(13, 24, 61);
+      position: relative;
+      display: block;
+      align-self: center;
+      margin-left: 400px;
+      font-size: 30px;
+    }
+
+    a:link {
+      color: red;
+    }
+
+    a:hover {
+      color: rgb(20, 102, 45);
+      font-size: 25px;
+    }
+
+    a:visited {
+      color: rgb(0, 0, 0);
+    }
+
+    a:active {
+      color: rgb(71, 8, 8);
+
+    }
+
+
+
+    q:lang(no) {
+      quotes: "&&" "~~";
+    }
+
+    #cp {
+      color: rgb(255, 94, 0);
+      display: inline-block;
+      font-size: 25px;
+      display: inline-block;
+    }
+
+    .link {
+      display: inline-block;
+    }
+
+    .fotor1 {
+      display: inline-block;
+      margin: 0%;
+    }
+
+    .fotor2 {
+      display: inline-block;
+      margin: 0%;
+      position: relative;
+      margin-top: 0%;
+      margin-bottom: 0%;
+      margin-left: 65px;
+      margin-right: 0%;
+      color: crimson;
+    }
+
+    .randoms {
+      display: inline-block;
+      position: relative;
+      color: rgb(3, 80, 7);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin-top: 0%;
+      width: 1000px;
+      margin: 0%;
+    }
+
+    /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+    /* Dropdown Button */
+    .dropbtn {
+      background-color: #04aa86;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #c59b26;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: rgb(80, 12, 12);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #dddddd;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+      background-color: #a5541e;
+    }
+
+    /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+    #whatsap {
+      display: block;
+      height: 40px;
+      width: 120px;
+    }
+
+    .break {
+      margin: 0%;
+    }
+
+    #dp {
+      margin-top: 10px;
+      height: 500px;
+      width: 620px;
+      display: inline;
+
+    }
+
+    #h02 {
+      margin-top: 0%;
+      color: coral;
+    }
+
+    #logo1 {
+      background-color: #000000;
+      margin: 0%;
+    }
+
+    #break1 {
+      margin: 0%;
+      padding: 0%;
+      display: block;
+    }
+
+    #timings {
+      display: inline-block;
+      align-self: center;
+      margin-left: 130px;
+    }
+
+    /*----------------------------------------------------------------*/
+    .dropbtn1 {
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown1 {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown1-content {
+      display: none;
+      position: absolute;
+      background-color: #000000;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(14, 219, 134, 0.2);
+      z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown1-content a {
+      color: rgb(132, 230, 3);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown1-content a:hover {
+      background-color: #92165e;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown1:hover .dropdown1-content {
+      display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown1.dropbtn1 {
+      background-color: #2b0101;
+    }
+  </style>
+
+  <header>
+    <div id="logo1">
+
+      <img src="logo2.png" alt="" />
+      <h1 id="title">SDH HARDWARE</h1>
+      <hr>
+    </div>
+
+    <nav id="menu">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">menu</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#contact-us">contact</a>
+          <a href="test0002.html">products</a>
+          <a href="validation.html">inquiry</a>
+          <a href="#about-us">About us</a>
+
+        </div>
+      </div>
+    </nav>
+    <hr>
+  </header>
+
+  <h1 id="h01">
+    hello and welcome to "sdh hadware stores"</h1>
+  <h1 id="h02"> Goa's leading hardware buissness website </h1>
+  </div>
+  <div>
+    <h1 id="about-us">About us</h1>
+    <p class="p_about">We the SDH harsware stores are in this buissness ever since 2001</p>
+    <p class="p_about">SDH hard ware is not just a hardware buissness , we are the top curators in hardware and real
+      estate buissness </p>
+    <p class="randoms">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi , fugit doloremque maxime
+      ex adipisci providentFor those who are interested in finding random paragraphs, that's exactly what this webpage
+      provides. If both a random word and a random sentence aren't quite long enough for your needs, then a random
+      paragraph might be the perfect solution. Once you arrive at this page, you'll see a random paragraph. If you need
+      another one, all you need to do is click on the "next paragraph" button. If you happen to need several random
+      paragraphs all at once, you can use this other paragraph generator. Below you can find a number of ways that this
+      generator can be used.
+    </p>
+    <br class="break">
+
+
+
+  </div>
+  <br>
+  <br>
+  <div id="contact-us">
+    <p>please contact us on WHATSAPP</p>
+    <a href="https://api.whatsapp.com/send?phone=910000000000&text=Hello this is the starting message"><img
+        src="WhatsAppButtonGreenSmall.png" alt="" height="90px" width="420px"></a>
+        <br>
+    <u>Contact us @</u>
+    <a class="fa fa-phone fa-2x" href="6969696969"></a>
+    <a class="fa fa-envolope fa-2x" href="sdh.com"></a>
+    <a class="fa fa-facebook fa-2x" href="https://www.Facebook.com"></a>
+    <a class="fa fa-instagram fa-2x" href="https://www.Instagram.com"></a>
+    <a class="fa fa-twitter fa-2x" href="https://twitter.com"></a>
+    <a class="fa fa-pintrest fa-2x" href="https://www.pinterest.com/"></a>
+    <br>
+
+    <p style="margin: 0%;">Or better see us in person</p>
+    <br id="break1">
+    <div class="dropdown1">
+      <button class="dropbtn1">our timings</button>
+      <div class="dropdown1-content">
+        <a href="#">we are open 9 am - 1 pm && 3pm - 8pm for weekdays</a>
+        <a href="#">Saturday 9am -1pm evening closed</a>
+        <a href="#">Sunday closed</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  <footer>
+    <h2 class="fotor1">©LAZY AF web solutions </h2>
+    <a class="fotor2" href="thelazyafofficial@gmail.com">thelazyafofficial@gmail.com &nbsp;&nbsp;</a>
+    
+  </footer>
+
+
+  </div>
+</body>
+
+</html>
+
+</html>
